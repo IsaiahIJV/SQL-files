@@ -1,0 +1,7 @@
+DROP TABLE IF EXISTS Phone ;
+CREATE TABLE finishedPhone (
+  Phone VARCHAR(12),
+  PhoneID INT AUTO_INCREMENT NOT NULL PRIMARY KEY
+) AS SELECT DISTINCT
+    Phone
+FROM uglycontacts.uglyinvoices;
